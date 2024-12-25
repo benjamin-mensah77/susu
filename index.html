@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Fees Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>School Fees Management</h1>
+    
+    <div class="form-container">
+        <form id="registrationForm">
+            <h2>Register Student</h2>
+            <input type="text" id="name" placeholder="Student Name" required>
+            <input type="text" id="class" placeholder="Class" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <form id="paymentForm">
+            <h2>Record Payment</h2>
+            <input type="text" id="paymentName" placeholder="Student Name" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <button type="submit">Pay</button>
+        </form>
+    </div>
+
+    <div id="receipt" class="receipt" style="display: none;">
+        <h3>Receipt</h3>
+        <p id="receiptDetails"></p>
+        <button id="printReceiptButton">Print Receipt</button>
+    </div>
+
+    <button id="viewStudentsButton">View Students</button>
+    <button id="viewStatementButton">View Statement</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
